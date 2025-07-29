@@ -1,5 +1,5 @@
 modLoader = "javafml"
-loaderVersion = "[47,)"
+loaderVersion = "[4,)"
 issueTrackerURL = "https://github.com/mahmudindev/mcmod-beta173dimension"
 license = "ARR"
 
@@ -14,36 +14,39 @@ Add beta 1.7.3 world generation as separate dimension.
 logoFile = "assets/beta173dimension/icon.png"
 
 [[dependencies.beta173dimension]]
-modId = "forge"
-mandatory = true
-versionRange = "[47,)"
+modId = "neoforge"
+type = "required"
+versionRange = "[21.0,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.beta173dimension]]
 modId = "minecraft"
-mandatory = true
-versionRange = "[1.20.1,)"
+type = "required"
+versionRange = "[1.21,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.beta173dimension]]
 modId = "moderner_beta"
-mandatory = true
+type = "required"
 versionRange = "[3.1.4,)"
 ordering = "NONE"
 side = "SERVER"
 
 [[dependencies.beta173dimension]]
 modId = "dimensionfixer"
-mandatory = true
+type = "required"
 versionRange = "[0.0.9,)"
 ordering = "NONE"
 side = "SERVER"
 
 [[dependencies.beta173dimension]]
 modId = "worldportal"
-mandatory = true
+type = "required"
 versionRange = "[0.0.9,)"
 ordering = "NONE"
 side = "SERVER"
+
+[[mixins]]
+config = "beta173dimension.mixins.json"
