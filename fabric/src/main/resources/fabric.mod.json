@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "beta173dimension",
+  "version": "${version}",
+  "name": "Beta 1.7.3 Dimension",
+  "description": "Add beta 1.7.3 world generation as separate dimension.",
+  "authors": [
+    "mahmudindev"
+  ],
+  "contact": {
+    "homepage": "https://github.com/mahmudindev",
+    "sources": "https://github.com/mahmudindev/mcmod-beta173dimension"
+  },
+  "license": "ARR",
+  "icon": "assets/beta173dimension/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.github.mahmudindev.mcmod.beta173dimension.fabric.Beta173DimensionFabric"
+    ],
+    "client": [
+      "com.github.mahmudindev.mcmod.beta173dimension.fabric.client.Beta173DimensionFabricClient"
+    ]
+  },
+  "mixins": [
+    "beta173dimension.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "moderner_beta": ">=3.1.4",
+    "dimensionfixer": ">=0.0.9",
+    "worldportal": ">=0.0.9"
+  },
+  "suggests": {
+    "fabric-api": "*"
+  }
+}
