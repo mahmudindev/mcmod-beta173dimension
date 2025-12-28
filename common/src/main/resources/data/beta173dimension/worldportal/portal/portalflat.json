@@ -1,0 +1,8 @@
+{
+  "frame_top_right": "minecraft:coarse_dirt",
+  "frame_top_left": "minecraft:cobblestone",
+  "frame_bottom_right": "minecraft:cobblestone",
+  "frame_bottom_left": "minecraft:coarse_dirt",
+  "mode": "worldportal:horizontal",
+  "destination": "beta173dimension:overworld"
+}
