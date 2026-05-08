@@ -1,52 +1,52 @@
 modLoader = "javafml"
-loaderVersion = "[4,)"
+loaderVersion = "${neoforge_loader_version_range}"
 issueTrackerURL = "https://github.com/mahmudindev/mcmod-beta173dimension"
-license = "ARR"
+license = "${mod_license}"
 
 [[mods]]
-modId = "beta173dimension"
+modId = "${mod_id}"
 version = "${version}"
-displayName = "Beta 1.7.3 Dimension"
-authors = "mahmudindev"
+displayName = "${mod_name}"
+authors = "${mod_authors}"
 description = '''
-Add beta 1.7.3 world generation as separate dimension.
+${description}
 '''
-logoFile = "assets/beta173dimension/icon.png"
+logoFile = "assets/${mod_id}/icon.png"
 
-[[dependencies.beta173dimension]]
+[[dependencies.${mod_id}]]
 modId = "neoforge"
 type = "required"
-versionRange = "[21.0,)"
+versionRange = "${neoforge_version_range}"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.beta173dimension]]
+[[dependencies.${mod_id}]]
 modId = "minecraft"
 type = "required"
-versionRange = "[1.21,)"
+versionRange = "[${minecraft_version},)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.beta173dimension]]
+[[dependencies.${mod_id}]]
 modId = "moderner_beta"
 type = "required"
-versionRange = "[3.1.4,)"
+versionRange = "[${modernerbeta_version},)"
 ordering = "NONE"
 side = "SERVER"
 
-[[dependencies.beta173dimension]]
+[[dependencies.${mod_id}]]
 modId = "dimensionfixer"
 type = "required"
-versionRange = "[0.0.9,)"
+versionRange = "[${dimensionfixer_version},)"
 ordering = "NONE"
 side = "SERVER"
 
-[[dependencies.beta173dimension]]
+[[dependencies.${mod_id}]]
 modId = "worldportal"
 type = "required"
-versionRange = "[0.0.9,)"
+versionRange = "[${worldportal_version},)"
 ordering = "NONE"
 side = "SERVER"
 
 [[mixins]]
-config = "beta173dimension.mixins.json"
+config = "${mod_id}.mixins.json"
